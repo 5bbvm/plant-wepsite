@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دليلك الذكي للزراعة</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+    }
+    .card {
+      transition: transform 0.3s ease-in-out;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600372145814-cc1fbb2fb7c3') center center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .section-padding {
+      padding: 60px 20px;
+    }
+        
+        /* تلوين العمود الأول (أسماء المدن) */
+    #calendar-section table tbody td:first-child {
+      background-color: #d1e7dd;
+      font-weight: bold;
+    }
+    #calendar-section table thead th:first-child {
+      background-color: #d1e7dd;
+    }
+    
+    #diseases-section table tbody td:first-child {
+      background-color: #cffce5;
+      font-weight: bold;
+    }
+    #diseases-section table thead th:first-child {
+      background-color: #cff4fc;
+    }
+    
+
+    .card-bg-1 {
+      background-image: url('static/image/bg1.png');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 50%;
+      
+      color: white;
+    }
+
+    .card-bg-2 {
+      background-image: url('static/image/bg2.png');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 40%;
+      color: white;
+    }
+
+    .card-bg-3 {
+      background-image: url('static/image/bg3.png');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 50%;
+      color: white;
+    }
+
+    .card-bg-4 {
+      background-image: url('static/image/bg4.png');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 50%;
+      background-position-x: left;
+      color: white;
+    }
+
+    .card-bg-5 {
+      background-image: url('static/image/bg5.png');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 50%;
+      background-position-x: 100%;
+      color: black;
+    }
+
+    .card-bg-6 {
+      background-image: url('static/image/bg6.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-position-y: 50%;
+      background-position-x: 100%;
+      color: black;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero" style="height: 100vh;
+  background-color: #d1e7dd; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+">
+  <div class="container">
+    <h1 class="display-4" style="color: #212529;">دليلك الذكي للزراعة المستدامة</h1>
+    <p class="display-6" style="color: #212529;" >اكتشف طرق الزراعة الحديثة باستخدام الذكاء الاصطناعي</p>
+    <a href="#cards" class="btn btn-success btn-lg rounded-pill px-4 shadow">ابدأ الآن</a>
+  </div>
+</section>
+
+<!-- Cards Section -->
+<section class="section-padding" id="cards" style="height: 100vh;
+  background-color: #d7effd; 
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: align;
+">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2 >اختر الموضوع الذي ترغب في استكشافه🔎</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="#plants-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-1">
+            <div class="card-body text-warning">
+              <h3 class="card-title">معلومات المحاصيل</h3>
+              <p class="card-text">تفاصيل زراعة الفلفل، البامية وغيرها</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#ai-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-2">
+            <div class="card-body text-dark">
+              <h3 class="card-title text-primary" style="font-size: 100%;"><strong>الذكاء الاصطناعي في الزراعة</strong></h3>
+              <p class="card-text" style="font-size: 90%;"><strong>تطبيقات حديثة مثل الري الآلي <br>ومراقبة المحاصيل</strong></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#beginner-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-3">
+            <div class="card-body text-right">
+              <h3 class="card-title text-dark">للمزارعين المبتدئين</h3>
+              <p class="card-text text-success" style="font-size:85%;"><strong>خطوات سهلة للبدء في الزراعة من الصفر</strong></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#calendar-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-4">
+            <div class="card-body text-dark">
+              <h3 class="card-title" style="padding-left: 20px;">جدول الزراعة</h3>
+              <p class="card-text" >ما يُزرع ومتى وأين في الأردن</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#diseases-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-5">
+            <div class="card-body text-dark">
+              <h3 class="card-title" style="padding-right: 1px;">أمراض النباتات</h3>
+              <p class="card-text" style="font-size:85%;"><strong>طرق الوقاية والعلاج لأهم الأمراض</strong></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#resources-section" class="text-decoration-none text-dark">
+          <div class="card p-3 shadow-sm h-100 text-align card-bg-6">
+            <div class="card-body text-dark">
+              <h3 class="card-title">روابط ومراجع</h3>
+              <p class="card-text">مصادر موثوقة من الويب</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Plants Info Section -->
+<section class="section-padding" id="plants-section" style="background-color: #efffe5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2 class="text-success">معلومات المحاصيل🌾</h2>
+      <p class="text-success"><strong>تفاصيل حول زراعة المحاصيل الشائعة مثل الفلفل الحلو والبامية</strong></p>
+    </div>
+
+    <!-- الفلفل الحلو -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 text-end">
+        <img src="static\image\pepper-red.jpg" class="img-fluid rounded shadow" alt="الفلفل الحلو" style="max-width: 50%;">
+      </div>
+      <div class="col-md-6 text-align">
+        <h4>الفلفل الحلو</h4>
+        <ul>
+          <li><strong>الظروف المناخية:</strong> 18–26 درجة مئوية</li>
+          <li><strong>التربة:</strong> جيدة التصريف، pH بين 6.0 و7.0</li>
+          <li><strong>الري:</strong> تنقيط، مع تجنب تعفن الجذور</li>
+          <li><strong>الزراعة:</strong> من بذور أو شتلات</li>
+          <li><strong>الحصاد:</strong> بعد 60–90 يومًا</li>
+          <li><strong>التخزين:</strong> 10–12 درجة مئوية</li>
+          <li><strong>المعايير التسويقية:</strong> ثمار نظيفة، موحدة اللون، وخالية من العيوب</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- البامية -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 text-end">
+        <img src="static\image/lady-finger.jpg" class="img-fluid rounded shadow" alt="البامية" style="max-width: 50%;">
+      </div>
+      <div class="col-md-6">
+        <h4>البامية</h4>
+        <ul>
+          <li><strong>الظروف المناخية:</strong> 24–35 درجة مئوية</li>
+          <li><strong>التربة:</strong> طينية جيدة التصريف أو رملية بوجود مياه منتظمة</li>
+          <li><strong>الري:</strong> أول رية بعد 21 يومًا، ثم تعطيش حتى بداية الإزهار</li>
+          <li><strong>التسميد:</strong> سماد عضوي + كبريت + سوبر فوسفات</li>
+          <li><strong>الحصاد:</strong> بعد 50–60 يومًا عندما تصل القرون إلى 8–12 سم</li>
+          <li><strong>التخزين:</strong> 7–10 درجات مئوية</li>
+          <li><strong>المعايير التسويقية:</strong> خضراء، طازجة، خالية من العيوب، قوام متماسك</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" id="ai-section" style="background-color: #d7effd; ;">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2>تطبيقات الذكاء الاصطناعي في الزراعة✨</h2>
+      <p class="text-muted">كيف تُحدث التقنيات الذكية تحولاً في الزراعة المستدامة؟</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">الزراعة الدقيقة</h5>
+            <p class="card-text">تحسين إنتاجية المحاصيل عبر تحليل البيانات الدقيقة لتقليل الهدر وزيادة العائد.</p>
+            <span class="badge bg-success">+30% غلة</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">أنظمة الري الآلي</h5>
+            <p class="card-text">ضبط كميات المياه أوتوماتيكيًا للحفاظ على الرطوبة المثلى وتوفير المياه.</p>
+            <span class="badge bg-primary">توفير 20–50% من المياه</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">مراقبة المحاصيل</h5>
+            <p class="card-text">تتبع حالة المحاصيل والكشف المبكر عن الأمراض باستخدام صور الأقمار الصناعية والطائرات بدون طيار.</p>
+            <span class="badge bg-warning text-dark">الكشف المبكر x3</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">إدارة صحة التربة</h5>
+            <p class="card-text">تحليل جودة التربة وتحديد الاحتياجات من العناصر الغذائية بدقة.</p>
+            <span class="badge bg-info text-dark">تحسين +25%</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">حلول مكافحة الآفات</h5>
+            <p class="card-text">تقنيات تحدد الآفات مبكرًا وتقلل استخدام المبيدات الكيميائية.</p>
+            <span class="badge bg-danger">-15% خسائر</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">الروبوتات الزراعية</h5>
+            <p class="card-text">أتمتة مهام الزراعة مثل الزرع، الري، والتعشيب لتقليل الجهد البشري.</p>
+            <span class="badge bg-secondary">توفير 40% عمالة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- AI Summary Text -->
+<div class="row mt-5">
+  <div class="col">
+    <div class="bg-white p-4 rounded shadow-sm">
+      <div style="background-color: rgba(255, 239, 230, 0.7); border-radius: 12px; padding: 24px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h5 class="text-success">كيف يعزز الذكاء الاصطناعي الإنتاجية والاستدامة؟</h5>
+        <p>
+          تسهم تقنيات الذكاء الاصطناعي في تحويل طريقة الزراعة التقليدية إلى أكثر دقة وكفاءة، من خلال تحليل البيانات واتخاذ قرارات مبنية على المعرفة. يمكن للمزارعين استخدام أجهزة الاستشعار وصور الأقمار الصناعية لتحديد الاحتياجات الفعلية للنباتات من المياه والأسمدة، مما يزيد من غلة المحاصيل بنسبة تصل إلى <strong class="text-success">30%</strong> ويقلل من الهدر.
+        </p>
+        <p>
+          واحدة من أبرز هذه التطبيقات هي <strong class="text-danger">مكافحة الآفات بالذكاء الاصطناعي</strong>، حيث تتيح النماذج الذكية الكشف المبكر عن الأمراض والآفات، وتوجيه التدخلات الوقائية في الوقت المناسب، مما يقلل من الاعتماد على المبيدات الكيميائية ويحسن صحة النباتات.
+        </p>
+      </div>  
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <div class="bg-white p-4 rounded shadow-sm">
+      <div style="background-color: rgba(231, 255, 200, 0.7); border-radius: 12px; padding: 24px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h5 class="text-warning">كيف تستفيد مراقبة المحاصيل من الذكاء الاصطناعي؟</h5>
+        <p>
+          أنظمة مراقبة المحاصيل المدعومة بالذكاء الاصطناعي توفر رؤى فورية حول حالة النباتات، من خلال صور الأقمار الصناعية والطائرات
+          بدون طيار. هذه التقنية تساعد في اكتشاف التهديدات مبكرًا، مثل الأمراض أو نقص المغذيات، ما يسمح للمزارعين بالتدخل السريع وتقليل الخسائر،
+          مع تحسين استخدام المياه والأسمدة بشكل دقيق.
+        </p>
+      </div>  
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-4">
+  <div class="col">
+    <div class="bg-white p-4 rounded shadow-sm">
+      <div style="background-color: rgba(230, 255, 250, 0.7); border-radius: 12px; padding: 24px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h5 class="text-primary">مستقبل مستدام للزراعة في انتظارنا</h5>
+        <p>
+          مع تسارع التحولات البيئية وازدياد التحديات الزراعية، يُعد تبني الذكاء الاصطناعي خطوة حاسمة نحو تحقيق زراعة أكثر كفاءة واستدامة.
+          فباستخدام تقنيات مثل الري الآلي والزراعة الدقيقة، يمكن للمزارعين تحسين الإنتاجية بنسبة تصل إلى 30٪، مع تقليل الفاقد في المياه والموارد.
+          كما تساهم تطبيقات الذكاء الاصطناعي في <strong>مكافحة الآفات بذكاء</strong> عبر الكشف المبكر والتدخل الوقائي، مما يحد من الاعتماد على المبيدات
+          ويعزز صحة التربة والمحاصيل.
+        </p>
+        <p>
+          الزراعة الحديثة ليست مجرد إنتاج غذاء، بل هي مسؤولية بيئية واقتصادية. وبفضل الذكاء الاصطناعي، يمكننا بناء منظومة زراعية ذكية تدعم الأمن الغذائي وتحمي مواردنا للأجيال القادمة.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Beginner Farmers Guide Section -->
+<section class="section-padding" id="beginner-section" style="background-color: #fff5d5; min-height: 100vh;">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2>الزراعة مش مجرد <strong class="text-success">بذور</strong> <strong class="text-info">ومي</strong>، هي شغف... وتخطيط... واهتمام..❗<br>إذا كنت تفكر تبدأ الزراعة، إليك بعض الخطوات السهلة والقريبة منك:</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm text-center" style="background-color: rgb(114, 216, 122);">
+          <div class="card-body">
+            <h5 class="card-title">1️⃣. اختيار المحصول المناسب</h5>
+            <p class="card-text">اختر نباتات تناسب التربة والمناخ في منطقتك، مثل الخضروات، الفواكه، أو الأعشاب🌱.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm text-center" style="background-color: rgb(253, 223, 124);">
+          <div class="card-body">
+            <h5 class="card-title">2️⃣. تحضير التربة</h5>
+            <p class="card-text">تأكد أن التربة غنية بالعناصر الغذائية، ويمكنك تعديلها بالسماد العضوي أو الإضافات الطبيعية✓.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm text-center" style="background-color: rgb(167, 225, 254);">
+          <div class="card-body">
+            <h5 class="card-title">3️⃣. الري الذكي</h5>
+            <p class="card-text">كل نبات له احتياج معين، لذلك الري بالتنقيط يعتبر حل ممتاز لتوفير المياه ومنع التعفن💧.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm text-center" style="background-color: rgb(255, 223, 195);">
+          <div class="card-body">
+            <h5 class="card-title">4️⃣. مراقبة الصحة</h5>
+            <p class="card-text">راقب نباتاتك بانتظام، وإذا لاحظت تغير في الأوراق أو وجود آفات، ابحث عن حل سريع🔎.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm text-center" style="background-color: rgb(253, 223, 124);">
+          <div class="card-body">
+            <h5 class="card-title">5️⃣. الحصاد والتخزين</h5>
+            <p class="card-text">احصد المحصول في الوقت المناسب وخزنه بطريقة تحافظ على الطزاجة والجودة🌿.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm text-center" style="background-color: rgb(253, 251, 129);">
+          <div class="card-body">
+            <h5 class="card-title">6️⃣. نصيحة ذهبية</h5>
+            <p class="card-text">الزراعة تحتاج وقت وصبر، لكن ستشعر بفخر حقيقي وأنت تأكل ما زرعت بيدك⏳!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- جدول الزراعة حسب المناخ والمنطقة في الأردن -->
+<section class="section-padding" id="calendar-section" style="background-color: #ffe1cf;">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2>جدول الزراعة حسب المناخ والمنطقة في الأردن📅</h2>
+      <p class="text-muted">استعن بهذا الجدول لتحديد المواعيد المناسبة للزراعة حسب منطقتك ومناخها</p>
+    </div>
+    <div class="table-responsive" style="background-color: #d1e7dd;">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-success">
+          <tr>
+            <th>المنطقة</th>
+            <th>المناخ</th>
+            <th>مواعيد الزراعة الشتوية</th>
+            <th>النباتات الشتوية</th>
+            <th>مواعيد الزراعة الصيفية</th>
+            <th>النباتات الصيفية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>عمان</td><td>معتدل صيفًا، بارد شتاء، أمطار متوسطة</td><td>سبتمبر - نوفمبر</td><td>القمح، الشعير، السبانخ، البصل</td><td>مارس - مايو</td><td>الطماطم، الفلفل، الباذنجان، الكوسا</td></tr>
+          <tr><td>إربد</td><td>رطب صيفًا، بارد شتاء، أمطار غزيرة</td><td>أكتوبر - ديسمبر</td><td>الفول، العدس، الجزر، الملفوف</td><td>أبريل - يونيو</td><td>الذرة، الفراولة، الخيار، البطيخ</td></tr>
+          <tr><td>العقبة</td><td>حار جدًا صيفًا، دافئ شتاء، قليل الأمطار</td><td>نوفمبر - يناير</td><td>البصل، الثوم، الجزر، السبانخ</td><td>فبراير - أبريل</td><td>النخيل، المانجو، الطماطم، الفلفل</td></tr>
+          <tr><td>الزرقاء</td><td>جاف صيفًا، بارد شتاء، أمطار قليلة</td><td>سبتمبر - نوفمبر</td><td>القمح، الشعير، السبانخ، البصل</td><td>مارس - مايو</td><td>البطيخ، الطماطم، الفلفل، الذرة</td></tr>
+          <tr><td>الكرك</td><td>معتدل صيفًا، بارد شتاء، أمطار متوسطة</td><td>أكتوبر - ديسمبر</td><td>القمح، الشعير، العدس، الفول</td><td>أبريل - يونيو</td><td>العنب، الزيتون، الطماطم، الفلفل</td></tr>
+          <tr><td>المفرق</td><td>جاف جدًا صيفًا، بارد شتاء، أمطار قليلة</td><td>سبتمبر - نوفمبر</td><td>القمح، الشعير، السبانخ، البصل</td><td>مارس - مايو</td><td>البطيخ، الطماطم، الفلفل، الذرة</td></tr>
+          <tr><td>عجلون</td><td>معتدل صيفًا، بارد شتاء، أمطار غزيرة</td><td>أكتوبر - ديسمبر</td><td>القمح، الشعير، العدس، البصل</td><td>أبريل - يونيو</td><td>العنب، الزيتون، الطماطم، الفلفل</td></tr>
+          <tr><td>جرش</td><td>مناخ متوسطي، شتاء بارد، صيف معتدل</td><td>أكتوبر - ديسمبر</td><td>القمح، الشعير، السبانخ، الجزر</td><td>أبريل - يونيو</td><td>التفاح، العنب، الفراولة، الطماطم</td></tr>
+          <tr><td>معان</td><td>جاف جدًا صيفًا، بارد شتاء، أمطار قليلة</td><td>نوفمبر - يناير</td><td>القمح، الشعير، البصل، الثوم</td><td>فبراير - أبريل</td><td>النخيل، البطيخ، الطماطم، الفلفل</td></tr>
+          <tr><td>الطفيلة</td><td>معتدل صيفًا، بارد شتاء، أمطار متوسطة</td><td>أكتوبر - ديسمبر</td><td>القمح، الشعير، العدس، الفول</td><td>أبريل - يونيو</td><td>الزيتون، اللوز، الطماطم، الفلفل</td></tr>
+          <tr><td>البتراء</td><td>جاف جدًا صيفًا، بارد شتاء، أمطار قليلة</td><td>نوفمبر - يناير</td><td>القمح، الشعير، السبانخ، البصل</td><td>فبراير - أبريل</td><td>النخيل، الطماطم، الفلفل، البطيخ</td></tr>
+          <tr><td>البلقاء</td><td>معتدل صيفًا، بارد شتاء، أمطار متوسطة</td><td>أكتوبر - ديسمبر</td><td>القمح، الشعير، العدس، الفول</td><td>أبريل - يونيو</td><td>الزيتون، العنب، الطماطم، الفلفل</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- جدول الأمراض النباتية -->
+<section class="section-padding" id="diseases-section" style="background-color: #effff5; min-height: 100vh;">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <h2 class="text-success">الأمراض النباتية الشائعة وطرق الوقاية والعلاج<span class="text-danger">❗</span></h2>
+      <p class="text-muted">تعرف على أبرز الأمراض التي قد تصيب محاصيلك وكيفية الوقاية منها والتعامل معها بفعالية</p>
+    </div>
+    <div class="table-responsive" style="background-color: #cff4fc;">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-info">
+          <tr>
+            <th>المرض</th>
+            <th>الأعراض</th>
+            <th>طرق العلاج</th>
+            <th>أساليب الوقاية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>عفن الجذور</td>
+            <td>اصفرار الأوراق، ضعف النمو، تعفن الجذور</td>
+            <td>تقليل الري، تحسين تصريف التربة، استخدام مبيدات فطرية</td>
+            <td>تجنب الإفراط في الري، استخدام تربة جيدة التصريف</td>
+          </tr>
+          <tr>
+            <td>الذبول الفطري</td>
+            <td>ذبول الأوراق، ضعف الساق، موت النبات</td>
+            <td>إزالة النباتات المصابة، استخدام مبيدات فطرية</td>
+            <td>زراعة أصناف مقاومة، تعقيم التربة قبل الزراعة</td>
+          </tr>
+          <tr>
+            <td>تبقع الأوراق</td>
+            <td>بقع صفراء أو بنية على الأوراق، تساقط الأوراق</td>
+            <td>رش النبات بمبيدات فطرية، إزالة الأوراق المصابة</td>
+            <td>تحسين التهوية، تقليل الرطوبة الزائدة</td>
+          </tr>
+          <tr>
+            <td>البياض الدقيقي</td>
+            <td>طبقة بيضاء تشبه الدقيق على الأوراق والبراعم</td>
+            <td>رش النبات بالكبريت أو المبيدات الفطرية</td>
+            <td>تقليل الرطوبة، تحسين التهوية</td>
+          </tr>
+          <tr>
+            <td>الصدأ النباتي</td>
+            <td>بقع برتقالية أو بنية على الأوراق، ضعف النمو</td>
+            <td>استخدام مبيدات فطرية، إزالة الأوراق المصابة</td>
+            <td>زراعة أصناف مقاومة، تحسين التهوية</td>
+          </tr>
+          <tr>
+            <td>النمل الزراعي</td>
+            <td>ثقوب في الساق والجذور، جذب الحشرات الضارة</td>
+            <td>استخدام الطعوم الطبيعية، رش المبيدات المناسبة</td>
+            <td>الحفاظ على نظافة التربة، إزالة الأعشاب الضارة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
